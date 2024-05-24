@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <link rel="stylesheet" type="text/css" href="stylee.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey form ui created for the FreeCodeCamp's Responsive Web Design Certification.">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  
+<div class="container">
+  <div class="header">
+    <div class="column-header">
+      <h1 id="title">Survey Form</h1>  
+      </div>
+      <div class="paragraph">
+        <p>Feel Free To Answer The Questions Below Based On Your Own Experience And Option. If You Are Not Convenient In Answering A Particular Question Please Skip It By Answering 'No'. Every Answer Would Be Very Appreciated. Thank You For Your Time.</p>
+      
+      </div>
+      
+     <div class="column-image">
+        <div id="image-div">
+         
+        </div>
+    </div>
+  </div>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name"> <h5>Your Name</h5> </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email"> <h5>Your Email Address</h5> </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="user@user.com"
+        required
+      />
+    </div>  
+
+    <div class="form-group">
+      <label id="number-label" for="mobile number"> <h5>Your Phone Number</h5> </label>
+      <input
+        type="mobile number"
+        name="mobile"
+        id="number"
+        min="1000000000"
+        max="9999999999"
+        class="form-control"
+        placeholder="999999999"
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number"> <h5>Age</h5> </label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <h5>Where Do You Live?</h5>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select</option>
+        <option value="Location1">Village</option>
+        <option value="Location2">Town</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+
+    <div class="form-group">
+      <h5>How would you rate your proficiency in coding</h5>
+      <label>
+        <input
+          name="user-rate"
+          value="beginner"
+          type="radio"
+          class="input-radio"
+          checked
+        />Beginner</label>
+      <label>
+        <input
+          name="user-rate"
+          value="intermediate"
+          type="radio"
+          class="input-radio"
+        />Intermediate</label>
+
+      <label>
+        <input
+          name="user-rate"
+          value="advance"
+          type="radio"
+          class="input-radio"
+        />Advance</label>
+    </div>
+    
+     <div class="form-group">
+      <h5>Have You Ever Appered in any coding contest?</h5>
+      <label>
+        <input
+          name="materials"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label>
+        <label>
+        <input
+        name="materials"
+          value="no"
+          type="radio"
+          class="input-radio"
+          checked
+        />No</label>
+    </div>
+    
+    
+    <div class="form-group">
+      <h5>Discuss what drives your passion for coding and outline your aspirations in the field.</h5>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="       "></textarea>
+    </div>
+
+     <div class="form-group">
+      <h5>What are some of the challenges you face while coding?</h5>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="      "></textarea>
+    </div>
+     <div class="form-group">
+      <h5>Please list the Data Structures you have a strong understanding of.</h5>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="        "></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit Form
+      </button>
+    </div>
+  </form>
+</div>
+
+ <section class="footer">
+    <p> Design By - SAURABH KUMAR </p>
+  </section>
+
+</body>
+
+</html>

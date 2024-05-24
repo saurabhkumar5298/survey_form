@@ -1,0 +1,153 @@
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: black;
+  margin: 0;
+  background: #A5F796;
+}
+
+
+input,
+button,
+select,
+
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 6rem auto 6rem auto;
+  box-shadow: 0 0.2rem 1.3rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 976px) {
+  .container {
+    max-width: 920px;
+  }
+}
+
+.header {
+  padding: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+/*Header*/
+.column-header{
+  color: green;
+}
+.paragraph{
+  color: black;
+  font-family: verdana;
+ }
+
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-header,
+  .column-image {
+    width: 100%;
+    margin: 0;
+  }
+  
+}
+
+/*Form*/
+
+form {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.form-group {
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  padding: 1rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #a6d8e2;
+  outline: 0;
+  box-shadow: 0 0 1rem 0.2rem rgba(205, 240, 247, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 1rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  background: #47A437;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes background-color {
+    100% {
+      background-color: #6f4c81;
+    }
+}
+
+.footer {
+  color: #0E12EA;
+  padding: 0.1rem;
+  text-align: center;
+}
